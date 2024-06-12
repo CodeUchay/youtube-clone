@@ -24,13 +24,13 @@ const Navbar = () => {
         <button className="nav-icon" onClick={() => setCollapse(!collapse)}>
           <MenuButton  />
         </button>
-        <div
+        {!collapse && <div
           className="flex items-center cursor-pointer"
           onClick={() => navigate(getRootURL())}
         >
           <YoutubeIcon />
           <span className="text-gray-500 text-xs mb-4">FR</span>
-        </div>
+        </div>}
       </div>
       <div className="lg:w-[650px] md:w-[400] flex justify-end items-center">
         <SearchBar />

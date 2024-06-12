@@ -29,7 +29,7 @@ const MenuBar = () => {
   };
 
   return (
-    <div className="p-2 mt-14 bg-white divide-y h-screen fixed">
+    <div className="p-2 mt-14 bg-white focus-within:overflow-scroll divide-y h-screen fixed hover:overflow-y-auto">
       <div className="my-2">
         <div onClick={() => handelClickOnButton(HOME_BUTTON)}>
           <MenuItem
